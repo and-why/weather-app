@@ -1,0 +1,262 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>TITLE</title>
+  <meta name="description" content="DESCRIPTIOPN" />
+  <meta property="og:image" content="#">
+  <meta property="og:image:type" content="image/jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://andySmith.is/">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@andysmith_is">
+  <meta name="twitter:title" content="TITLE.">
+  <meta name="twitter:description" content="DESCRIPTION">
+  <meta name="twitter:creator" content="@Andysmith_is">
+  <meta name="twitter:image" content="#">
+  <meta name="twitter:url" content="http://andysmith.is/">
+  <meta name="twitter:domain" content="http://andysmith.is">
+
+  <meta name="author" content="Andy Smith Group, Inc." />
+  <meta name="copyright" content="Andy Smith" />
+  <link rel="canonical" href="#" />
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="inc/style.css" />
+
+  <!--<script src="//cdn.jsdelivr.net/npm/pouchdb@6.4.2/dist/pouchdb.min.js"></script>-->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="inc/script.js"></script> 
+  
+  </head>
+  
+  <body class="body" onload="getLocation()">
+  <div class="wrap">
+    <div class="top-wrap">
+      <img class="weather-background" src="inc/icons/clear-day.png" alt="">
+      <div class="current-weather-wrap">
+        <div class="cur-temp-wrap">
+          <div class="cur-temp"> <span class="curTemp">--</span><span class="small-c"> °C</span>
+          </div>
+          <div class="cur-weather-summary">--</div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-cont forecast-twelve">
+        <div class="flex-item weather-scroll-box box-0">
+          <div class="small time tm-0">--</div>
+          <img class="im-0 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-0">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-1">
+          <div class="small time tm-1">--</div>
+          <img class="im-1 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-1">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-2">
+          <div class="small time tm-2">--</div>
+          <img class="im-2 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-2">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-3">
+          <div class="small time tm-3">--</div>
+          <img class="im-3 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-3">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-4">
+          <div class="small time tm-4">--</div>
+          <img class="im-4 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-4">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-5">
+          <div class="small time tm-5">--</div>
+          <img class="im-5 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-5">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-6">
+          <div class="small time tm-6">--</div>
+          <img class="im-6 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-6">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-7">
+          <div class="small time tm-7">--</div>
+          <img class="im-7 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-7">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-8">
+          <div class="small time tm-8">--</div>
+          <img class="im-8 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-8">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-9">
+          <div class="small time tm-9">--</div>
+          <img class="im-9 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-9">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-10">
+          <div class="small time tm-10">--</div>
+          <img class="im-10 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-10">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-11">
+          <div class="small time tm-11">--</div>
+          <img class="im-11 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-11">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-12">
+          <div class="small time tm-12">--</div>
+          <img class="im-12 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-12">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-13">
+          <div class="small time tm-13">--</div>
+          <img class="im-13 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-13">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-14">
+          <div class="small time tm-14">--</div>
+          <img class="im-14 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-14">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-15">
+          <div class="small time tm-15">--</div>
+          <img class="im-15 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-15">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-16">
+          <div class="small time tm-16">--</div>
+          <img class="im-16 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-16">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-17">
+          <div class="small time tm-17">--</div>
+          <img class="im-17 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-17">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-18">
+          <div class="small time tm-18">--</div>
+          <img class="im-18 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-18">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-19">
+          <div class="small time tm-19">--</div>
+          <img class="im-19 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-19">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-20">
+          <div class="small time tm-20">--</div>
+          <img class="im-20 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-20">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-21">
+          <div class="small time tm-21">--</div>
+          <img class="im-21 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-21">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-22">
+          <div class="small time tm-22">--</div>
+          <img class="im-22 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-22">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-23">
+          <div class="small time tm-23">--</div>
+          <img class="im-23 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-23">--</span> °C</div>
+        </div>
+        <div class="flex-item weather-scroll-box box-24">
+          <div class="small time tm-24">--</div>
+          <img class="im-24 weather-icon" src="inc/icons/clear-day.svg" alt="weather">
+          <div class="small"><span class="tmp-24">--</span> °C</div>
+        </div>
+      </div>
+      <div class="daily-weather-wrap">
+      <div class="summary-wrap">
+        <h4>Summary:</h4>
+        <div class="summary">--</div>
+      </div>
+      
+        <div class="daily-weather flex-cont">
+          <span class="daily-day dy-0 flex-item">--</span>
+          <div class="daily-temp-summary flex-item"> 
+            <span class="daily-temp dth-0">--</span> / <span class="dtl-0">--</span><br>
+            <span class="daily-summary dsm-0">--</span>
+          </div>
+            </div>
+        <div class="daily-weather flex-cont">
+          <span class="daily-day dy-1 flex-item">--</span>
+          <div class="daily-temp-summary flex-item"> 
+            <span class="daily-temp dth-1">--</span> / <span class="dtl-1">--</span><br>
+            <span class="daily-summary dsm-1">--</span>
+          </div>
+        </div>
+        <div class="daily-weather flex-cont">
+          <span class="daily-day dy-2 flex-item">--</span>
+          <div class="daily-temp-summary flex-item"> 
+            <span class="daily-temp dth-2">--</span> / <span class="dtl-2">--</span><br>
+            <span class="daily-summary dsm-2">--</span>
+          </div>
+        </div>
+        <div class="daily-weather flex-cont">
+          <span class="daily-day dy-3 flex-item">--</span>
+          <div class="daily-temp-summary flex-item"> 
+            <span class="daily-temp dth-3">--</span> / <span class="dtl-3">--</span><br>
+            <span class="daily-summary dsm-3">--</span>
+          </div>
+        </div>
+        <div class="daily-weather flex-cont">
+          <span class="daily-day dy-4 flex-item">--</span>
+          <div class="daily-temp-summary flex-item"> 
+            <span class="daily-temp dth-4">--</span> / <span class="dtl-4">--</span><br>
+            <span class="daily-summary dsm-4">--</span>
+          </div>
+        </div>
+        <div class="daily-weather flex-cont">
+          <span class="daily-day dy-5 flex-item">--</span>
+          <div class="daily-temp-summary flex-item"> 
+            <span class="daily-temp dth-5">--</span> / <span class="dtl-5">--</span><br>
+            <span class="daily-summary dsm-5">--</span>
+          </div>
+        </div>
+        <div class="daily-weather flex-cont">
+          <span class="daily-day dy-6 flex-item">--</span>
+          <div class="daily-temp-summary flex-item"> 
+            <span class="daily-temp dth-6">--</span> / <span class="dtl-6">--</span><br>
+            <span class="daily-summary dsm-6">--</span>
+          </div>
+        </div>
+      </div>
+      <div class="below-wrap">
+        <h4>Today's Details</h4>
+        <div class="current-weather-wrap flex-cont">
+          <div class="flex-item">
+            <div>Humidity</div>
+            <div class="curHum">--</div>
+          </div>
+          <div class="flex-item">
+            <div>UV Index:</div>
+            <div class="curUV">--</div>
+          </div>
+          <div class="flex-item">
+            <div>Wind Speed:</div>
+            <div class="curWind">--</div>
+          </div>
+        </div>
+        
+
+      </div>
+
+
+  </div>
+</body>
+
+</html>
